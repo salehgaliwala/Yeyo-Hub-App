@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_card_trip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/entryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/entrySubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtitle"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/entryAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textStyle="bold"
+            android:textColor="@color/color_accent"
+            android:textSize="14sp"
+            android:layout_marginEnd="12dp"/>
+
+        <ImageView
+            android:id="@+id/btnReceipt"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_booking"
+            app:tint="@color/primary"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_marginEnd="12dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/error"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

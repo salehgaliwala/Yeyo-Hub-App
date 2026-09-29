@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_card">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputContainer"
+        android:padding="8dp"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/editChatMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message..."
+            android:maxLines="4"
+            android:background="@drawable/bg_input_field"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnChatSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check"
+            app:fabSize="mini"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/primary"
+            android:contentDescription="Send" />
+    </LinearLayout>
+
+</RelativeLayout>

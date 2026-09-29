@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/docIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_booking"
+        android:tint="@color/primary"
+        android:layout_marginEnd="16dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/docName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document Name"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/docAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to download"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@android:drawable/stat_sys_download"
+        android:tint="@color/color_nav"/>
+
+</LinearLayout>
