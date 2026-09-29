@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="app_name">YEYO HUB</string>
+  <string name="app_logo">YEYO HUB</string>
+  <string name="shortcut_start">Démarrer le service</string>
+  <string name="shortcut_stop">Arrêter le service</string>
+  <string name="shortcut_sos">Envoyer SOS</string>
+  <string name="channel_default">Canal principal</string>
+  <string name="settings_id_title">Identifiant d\'appareil</string>
+  <string name="settings_url_title">URL du serveur</string>
+  <string name="settings_url_summary">URL du serveur de suivi</string>
+  <string name="settings_interval_title">Fréquence</string>
+  <string name="settings_interval_summary">Intervalle de rapport en secondes</string>
+  <string name="settings_distance_title">Distance</string>
+  <string name="settings_distance_summary">Distance de rapport en mètres</string>
+  <string name="settings_angle_title">Angle</string>
+  <string name="settings_angle_summary">Angle de rapport en degrés</string>
+  <string name="settings_status_title">Statut du service</string>
+  <string name="settings_status_off">Démarrer</string>
+  <string name="settings_status_on">Arrêter</string>
+  <string name="settings_status_off_summary">Service arrêté</string>
+  <string name="settings_status_on_summary">Service en cours d\'exécution</string>
+  <string name="settings_buffer">Mise en mémoire tampon hors ligne</string>
+  <string name="settings_buffer_off_summary">Mise en mémoire tampon désactivée</string>
+  <string name="settings_buffer_on_summary">Mise en mémoire tampon activée</string>
+  <string name="settings_wakelock">Verrou de veille</string>
+  <string name="settings_wakelock_off_summary">Verrou de veille désactivé</string>
+  <string name="settings_wakelock_on_summary">Verrou de veille activé</string>
+  <string name="settings_accuracy_title">Précision de la localisation</string>
+  <string name="settings_accuracy_summary">Précision de localisation souhaitée</string>
+  <string name="settings_accuracy_high">Haute</string>
+  <string name="settings_accuracy_medium">Moyenne</string>
+  <string name="settings_accuracy_low">Basse</string>
+  <string name="settings_foreground_title">Service en premier plan</string>
+  <string name="settings_foreground_summary">Augmenter la priorité du service</string>
+  <string name="settings_language_title">Langue</string>
+  <string name="settings_language_summary">Changer la langue de l\'application</string>
+  <string name="menu_status">Statut</string>
+  <string name="menu_info">Info</string>
+  <string name="menu_shortcuts">Raccourcis</string>
+  <string name="menu_clear">Effacer</string>
+  <string name="status_service_create">Service démarré</string>
+  <string name="status_service_destroy">Service arrêté</string>
+  <string name="status_send_success">Envoi réussi</string>
+  <string name="status_send_fail">Échec de l\'envoi</string>
+  <string name="status_location_update">Mise à jour de localisation</string>
+  <string name="status_network_online">Réseau en ligne</string>
+  <string name="status_network_offline">Réseau hors ligne</string>
+  <string name="hidden_alert">L\'application a été masquée. Pour l\'ouvrir à nouveau, veuillez composer le 8722227 (YEYO HUB).</string>
+  <string name="error_msg_invalid_url">Veuillez entrer une URL http:// ou https:// valide</string>
+  <string name="request_exception">Pour collecter continuellement des données de localisation, veuillez désactiver l\'optimisation de la batterie pour l\'application.</string>
+  <string name="request_background">Pour collecter continuellement des données de localisation, veuillez activer la permission \"%s\".</string>
+  <string name="request_background_option">Toujours autoriser</string>
+  <string name="widget_description">Affiche le statut du service</string>
+  <string name="widget_label">Widget de statut</string>
+
+  <!-- Login Strings -->
+  <string name="login_title">Connexion</string>
+  <string name="login_welcome">Bienvenue</string>
+  <string name="login_username">Nom d\'utilisateur</string>
+  <string name="login_password">Mot de passe</string>
+  <string name="login_button">Se connecter</string>
+  <string name="login_error_empty">Veuillez saisir le nom d\'utilisateur et le mot de passe</string>
+  <string name="login_failed">Échec de la connexion</string>
+  <string name="login_forgot_password">Mot de passe oublié ?</string>
+
+  <!-- Navigation Drawer -->
+  <string name="nav_home">Accueil</string>
+  <string name="nav_settings">Paramètres</string>
+  <string name="nav_header_title">YEYO HUB</string>
+  <string name="nav_header_subtitle">Application Chauffeur</string>
+
+  <!-- Trips Strings -->
+  <string name="trips_title">YEYO HUB</string>
+  <string name="trip_from">De : %s</string>
+  <string name="trip_to">À : %s</string>
+  <string name="trip_cost">Coût : %s</string>
+  <string name="trip_accept">Accepter</string>
+  <string name="trip_reject">Refuser</string>
+  <string name="trip_complete">Terminer</string>
+  <string name="trip_status">Statut : %s</string>
+  <string name="reject_reason_title">Raison du refus</string>
+  <string name="reject_reason_hint">Entrez la raison...</string>
+  <string name="default_notification_channel_id">fcm_default_channel</string>
+  <string name="logout">Déconnexion</string>
+  <string name="logout_summary">Se déconnecter de l\'application</string>
+  <string name="logout_confirm_title">Déconnexion</string>
+  <string name="logout_confirm_message">Êtes-vous sûr de vouloir vous déconnecter ?</string>
+  <string name="yes">Oui</string>
+  <string name="no">Non</string>
+</resources>

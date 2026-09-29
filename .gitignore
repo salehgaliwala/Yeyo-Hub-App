@@ -1,0 +1,8 @@
+.gradle
+.idea/
+local.properties
+*.iml
+build/
+.DS_Store
+google-services.json
+error.log
