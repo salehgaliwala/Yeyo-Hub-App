@@ -1,4 +1,4 @@
-package org.traccar.client
+package com.trackigniter.client
 
 import android.location.Location
 import android.os.Build
@@ -7,7 +7,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
-import org.traccar.client.ProtocolFormatter.formatRequest
+import com.trackigniter.client.ProtocolFormatter.formatRequest
 
 @Config(sdk = [Build.VERSION_CODES.P])
 @RunWith(RobolectricTestRunner::class)

@@ -103,7 +103,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp">
                     
                     <TextView
                         android:layout_width="0dp"
@@ -120,6 +121,29 @@
                         android:text="-"
                         android:textStyle="bold"
                         android:textColor="@color/error"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Reference ID"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/profileReferenceId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_primary"
                         android:textSize="16sp"/>
                 </LinearLayout>
 

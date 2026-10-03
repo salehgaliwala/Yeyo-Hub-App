@@ -144,7 +144,9 @@ data class DriverProfile(
     val licenseExpiry: String?,
     @SerializedName("total_trips")
     val totalTrips: Int,
-    val photo: String?
+    val photo: String?,
+    @SerializedName("reference_id")
+    val referenceId: String? = null
 )
 
 data class Expense(
