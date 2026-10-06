@@ -47,7 +47,7 @@ class RetrofitClient(context: Context) {
         .build()
 
     val apiService: ApiService by lazy {
-        val baseUrl = "https://codeforts.com/trackigniter8/mobile/api/"
+        val baseUrl = "https://rental.yeyocar.com/mobile/api/"
         Retrofit.Builder()
             .baseUrl(baseUrl)
             .client(okHttpClient)

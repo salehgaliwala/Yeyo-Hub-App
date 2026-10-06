@@ -368,7 +368,7 @@ class TripsFragment : Fragment() {
             },
             onReceiptClick = { imagePath ->
                 val fullUrl = if (imagePath.startsWith("http")) imagePath 
-                              else "https://codeforts.com/trackigniter2/assets/uploads/$imagePath"
+                              else "https://rental.yeyocar.com/assets/uploads/$imagePath"
                 downloadFile(fullUrl, "receipt_${System.currentTimeMillis()}.jpg")
             }
         )

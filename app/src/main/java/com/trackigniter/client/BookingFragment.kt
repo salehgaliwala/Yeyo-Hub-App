@@ -54,7 +54,7 @@ class BookingFragment : Fragment() {
 
     private fun loadProfileImage(imageView: ImageView, photoUrl: String) {
         val fullUrl = if (photoUrl.startsWith("http")) photoUrl
-        else "https://codeforts.com/trackigniter2/assets/uploads/$photoUrl"
+        else "https://rental.yeyocar.com/assets/uploads/$photoUrl"
 
         viewLifecycleOwner.lifecycleScope.launch(kotlinx.coroutines.Dispatchers.IO) {
             try {
