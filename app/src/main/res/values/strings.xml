@@ -52,6 +52,75 @@
   <string name="widget_description">Shows the service status</string>
   <string name="widget_label">Status widget</string>
 
+  <string name="settings_language_title">Language</string>
+  <string name="settings_language_summary">Select application language</string>
+
+  <string-array name="language_names">
+    <item>System Default</item>
+    <item>English</item>
+    <item>Español</item>
+    <item>Français</item>
+    <item>Deutsch</item>
+    <item>العربية</item>
+    <item>हिन्दी</item>
+    <item>中文</item>
+    <item>Português</item>
+    <item>Русский</item>
+    <item>Italiano</item>
+    <item>日本語</item>
+    <item>한국어</item>
+    <item>Tiếng Việt</item>
+    <item>Türkçe</item>
+    <item>ไทย</item>
+    <item>Bahasa Indonesia</item>
+    <item>Polski</item>
+    <item>Svenska</item>
+    <item>Nederlands</item>
+    <item>Dansk</item>
+    <item>Suomi</item>
+    <item>Norsk</item>
+    <item>Magyar</item>
+    <item>Čeština</item>
+    <item>Română</item>
+    <item>Ελληνικά</item>
+    <item>עברית</item>
+    <item>বাংলা</item>
+    <item>தமிழ்</item>
+  </string-array>
+
+  <string-array name="language_values">
+    <item>default</item>
+    <item>en</item>
+    <item>es</item>
+    <item>fr</item>
+    <item>de</item>
+    <item>ar</item>
+    <item>hi</item>
+    <item>zh</item>
+    <item>pt</item>
+    <item>ru</item>
+    <item>it</item>
+    <item>ja</item>
+    <item>ko</item>
+    <item>vi</item>
+    <item>tr</item>
+    <item>th</item>
+    <item>id</item>
+    <item>pl</item>
+    <item>sv</item>
+    <item>nl</item>
+    <item>da</item>
+    <item>fi</item>
+    <item>nb</item>
+    <item>hu</item>
+    <item>cs</item>
+    <item>ro</item>
+    <item>el</item>
+    <item>iw</item>
+    <item>bn</item>
+    <item>ta</item>
+  </string-array>
+
   <!-- Login Strings -->
   <string name="login_title">Login</string>
   <string name="login_welcome">Welcome Back</string>

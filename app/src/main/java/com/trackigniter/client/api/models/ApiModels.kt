@@ -137,15 +137,17 @@ data class ChatSendRequest(
 )
 
 data class DriverProfile(
+    @SerializedName("name", alternate = ["d_name", "driver_name", "full_name"])
     val name: String?,
-    @SerializedName("license_no")
+    @SerializedName("license_no", alternate = ["d_licenseno", "d_license_no", "licenseno", "license_number"])
     val licenseNo: String?,
-    @SerializedName("license_expiry")
+    @SerializedName("license_expiry", alternate = ["d_license_expdate", "d_license_expiry", "license_expdate", "expiry_date"])
     val licenseExpiry: String?,
-    @SerializedName("total_trips")
-    val totalTrips: Int,
+    @SerializedName("total_trips", alternate = ["totaltrips", "trips_count"])
+    val totalTrips: Int = 0,
+    @SerializedName("photo", alternate = ["photo_url", "d_photo", "d_photo_url", "driver_photo", "image", "avatar"])
     val photo: String?,
-    @SerializedName("reference_id", alternate = ["d_ref", "ref_id", "referenceNo", "d_reference_id"])
+    @SerializedName("reference_id", alternate = ["d_ref", "d_ref_id", "ref_id", "referenceNo", "d_reference_id", "ref", "driver_ref", "d_id"])
     val referenceId: String? = null
 )
 

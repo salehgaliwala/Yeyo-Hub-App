@@ -171,7 +171,25 @@ class MainFragment : PreferenceFragmentCompat(), OnSharedPreferenceChangeListene
             (requireActivity().application as MainApplication).handleRatingFlow(requireActivity())
         } else if (key == KEY_DEVICE) {
             findPreference<Preference>(KEY_DEVICE)?.summary = sharedPreferences?.getString(KEY_DEVICE, null)
+        } else if (key == KEY_LANGUAGE) {
+            val language = sharedPreferences?.getString(KEY_LANGUAGE, "default")
+            updateAppLocale(requireContext(), language)
+            requireActivity().recreate()
         }
+    }
+
+    private fun updateAppLocale(context: Context, language: String?) {
+        val locale = if (language.isNullOrEmpty() || language == "default") {
+            Locale.getDefault()
+        } else {
+            Locale(language)
+        }
+        Locale.setDefault(locale)
+        val resources = context.resources
+        val config = resources.configuration
+        config.setLocale(locale)
+        @Suppress("DEPRECATION")
+        resources.updateConfiguration(config, resources.displayMetrics)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -322,6 +340,7 @@ class MainFragment : PreferenceFragmentCompat(), OnSharedPreferenceChangeListene
         const val KEY_STATUS = "status"
         const val KEY_BUFFER = "buffer"
         const val KEY_WAKELOCK = "wakelock"
+        const val KEY_LANGUAGE = "language"
         private const val PERMISSIONS_REQUEST_LOCATION = 2
         private const val PERMISSIONS_REQUEST_BACKGROUND_LOCATION = 3
     }
