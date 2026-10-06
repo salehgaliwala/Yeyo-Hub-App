@@ -14,6 +14,17 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val prefs = androidx.preference.PreferenceManager.getDefaultSharedPreferences(this)
+        val lang = prefs.getString("language", "default")
+        if (!lang.isNullOrEmpty() && lang != "default") {
+            val locale = java.util.Locale(lang)
+            java.util.Locale.setDefault(locale)
+            val config = resources.configuration
+            config.setLocale(locale)
+            @Suppress("DEPRECATION")
+            resources.updateConfiguration(config, resources.displayMetrics)
+        }
+
         super.onCreate(savedInstanceState)
         
         // Session Check

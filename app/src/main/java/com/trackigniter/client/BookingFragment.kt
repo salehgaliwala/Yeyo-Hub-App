@@ -66,12 +66,18 @@ open class BookingFragment : Fragment() {
                 val client = okhttp3.OkHttpClient.Builder()
                     .followRedirects(true)
                     .followSslRedirects(true)
+                    .connectTimeout(15, java.util.concurrent.TimeUnit.SECONDS)
+                    .readTimeout(15, java.util.concurrent.TimeUnit.SECONDS)
                     .build()
-                val request = okhttp3.Request.Builder().url(fullUrl).build()
+                val request = okhttp3.Request.Builder()
+                    .url(fullUrl)
+                    .header("User-Agent", "Mozilla/5.0")
+                    .build()
                 val response = client.newCall(request).execute()
                 if (response.isSuccessful) {
-                    response.body?.byteStream()?.use { inputStream ->
-                        val bitmap = android.graphics.BitmapFactory.decodeStream(inputStream)
+                    val bytes = response.body?.bytes()
+                    if (bytes != null && bytes.isNotEmpty()) {
+                        val bitmap = android.graphics.BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
                         if (bitmap != null) {
                             kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
                                 imageView.setImageBitmap(bitmap)
@@ -81,7 +87,7 @@ open class BookingFragment : Fragment() {
                         }
                     }
                 } else {
-                    Log.e("Booking", "Failed to download image: ${response.code}")
+                    Log.e("Booking", "Failed to download image: ${response.code} from $fullUrl")
                 }
             } catch (e: Exception) {
                 Log.e("Booking", "Error loading profile photo from $fullUrl", e)

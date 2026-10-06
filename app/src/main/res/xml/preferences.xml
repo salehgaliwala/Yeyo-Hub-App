@@ -63,6 +63,14 @@
         android:summaryOn="@string/settings_wakelock_on_summary"
         android:title="@string/settings_wakelock" />
 
+    <ListPreference
+        android:key="language"
+        android:title="@string/settings_language_title"
+        android:summary="%s"
+        android:defaultValue="default"
+        android:entries="@array/language_names"
+        android:entryValues="@array/language_values" />
+
     <Preference
         android:key="logout"
         android:title="Logout"
