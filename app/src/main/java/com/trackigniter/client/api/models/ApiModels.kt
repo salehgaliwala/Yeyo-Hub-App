@@ -145,7 +145,7 @@ data class DriverProfile(
     @SerializedName("total_trips")
     val totalTrips: Int,
     val photo: String?,
-    @SerializedName("reference_id")
+    @SerializedName("reference_id", alternate = ["d_ref", "ref_id", "referenceNo", "d_reference_id"])
     val referenceId: String? = null
 )
 
